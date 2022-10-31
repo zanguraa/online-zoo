@@ -63,8 +63,11 @@ html {
     --Frosted_glass_white: rgba(253, 253, 255, 0.52);
   }
 
-  body {
+  html {
     transition: all .3s ease-out;
+  }
+
+  body {
     display: flex;
     flex-direction: column;
   }
@@ -418,7 +421,8 @@ header {
     padding: 20px 20px 56px 20px;
     gap: 15px;
     background: url(./assets/images/leave_photo.png) no-repeat;
-    background-position: right -44px bottom -37px;
+    background-position: right -20px bottom -26px;
+    background-size: 77px 75px;
 }
 
 .testimonials h2 {
@@ -504,6 +508,14 @@ footer {
     padding: 20px 10px;
 }
 
+.footer-wrapper {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-logo {
     position: relative;
     
@@ -530,6 +542,11 @@ footer {
     font-size: 24px;
     line-height: 120%;
     color: #333b41;
+}
+
+.icon-container {
+    display: flex;
+    gap: 30px;
 }
 
 svg {
@@ -574,6 +591,12 @@ svg:hover {
     font-size: 15px;
     line-height: 120%;
     color: #FFFFFF;
+}
+
+.footer-reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer-navigation ul {
@@ -787,5 +810,50 @@ svg:hover {
         right: 31%;
         top: -20%;
         transform: rotateZ(-83deg);
+    }
+
+    .testimonials {
+        padding: 20px 20px 96px 20px;
+        background-position: right -31px bottom -50px;
+        background-size: 149px 147px;
+    }
+
+    .footer-logo {
+        width: 82px;
+        padding: 5px;
+        border: 0.5px solid #FFFFFF;
+        border-radius: 2px;
+    }
+
+    .footer-logo img {
+        top: 22px;
+        left: 3px;
+    }
+
+    .icon-container {
+        gap: 20px;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
+
+    .footer-wrapper {
+        position: relative;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .footer-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        align-items: flex-end;
+    }
+
+    .designed-by {
+        gap: 10px;
     }
 }
