@@ -95,8 +95,8 @@ header {
     height: 10px;
 }
 
-#hidden {
-    display: none;
+.hidden-mobile {
+    display: none!important;
 }
 
 .burger-menu {
@@ -112,7 +112,16 @@ header {
     top: 0;
 }
 
+.wrapper {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    max-width: 320px;
+}
 
+.column-container {
+    flex-direction: column;
+}
 
 .turn-on {
     display: flex;
@@ -171,8 +180,15 @@ header {
     flex-direction: column;
     padding: 12px;
     background: url(./assets/images/flower.png) no-repeat;
-    background-position: right -38% top 10%;
+    background-position: right -79px top 10%;
     background-size: 112px 217px;
+}
+
+.pick-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .orange-button {
@@ -191,11 +207,15 @@ header {
     align-items: center;
     font-weight: 500;
     width: 100%;
+    max-width: 300px;
     border: none;
-    
     height: 54px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
+}
+
+.card-container {
+    flex-direction: column;
 }
 
 .universal-button a {
@@ -222,6 +242,13 @@ header {
     gap: 10px;
 }
 
+.back-h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+
 .backstage h2 {
     font-weight: 400;
     font-size: 24px;
@@ -229,6 +256,8 @@ header {
     color: #333B41;
     width: 80%;
 }
+
+
 
 .backstage span {
     font-weight: 400;
@@ -244,6 +273,9 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    background: url(./assets/images/palm.png) no-repeat, url(./assets//images/strelitzia\ .png) no-repeat;
+    background-position: left -72px bottom -13px, right -23px bottom -8px;
+    background-size: 138px 72px, 85px 71px;
 }
 
 .card {
@@ -289,9 +321,6 @@ header {
     width: 100%;
     justify-content: center;
     height: 100px;
-    background: url(./assets/images/palm.png) no-repeat, url(./assets//images/strelitzia\ .png) no-repeat;
-    background-position: left -40% top 144%, right -10% top 134%;    
-    background-size: 138px 72px, 85px 71px;
 }
 
 
@@ -301,8 +330,10 @@ header {
 }
 
 .arrows {
+    align-items: center;
     width: 62px;
     height: 62px;
+    justify-content: center;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 50%;
     border: none;
@@ -352,7 +383,7 @@ header {
 
 .pick-card-container {
     display: flex;
-    position: relative;
+   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -360,6 +391,7 @@ header {
 }
 
 .pick-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -367,14 +399,14 @@ header {
 
 .first-arrow {
     position: absolute;
-    right: 14%;
-    top: 25%;
+    right: -16%;
+    top: 70%;
 }
 
 .second-arrow {
     position: absolute;
-    right: 13%;
-    top: 55%;
+    right: -14%;
+    top: 70%;
 }
 
 .testimonials {
@@ -492,9 +524,16 @@ footer {
     height: 20px;
 }
 
+.how-it-works {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333b41;
+}
+
 svg {
     fill: #c4c4c4;
-    
 }
 
 svg:hover {
@@ -554,4 +593,199 @@ svg:hover {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 640px) {
+
+    .wrapper {
+        margin: auto;
+        display: flex;
+        gap: 20px;
+        max-width: 640px;
+    }
+
+    #watch-online {
+        background: url(./assets/images/giant_panda.png) no-repeat;
+        background-size: cover;
+        height: 340px;
+        display: flex;
+        gap: 20px;
+    }
+
+    
+
+    .hidden-tablet {
+        display: none;
+    }
+
+    .circle-div {
+        width: 255px;
+        height: 204px;
+        font-weight: 700;
+        font-size: 54.2894px;
+        line-height: 75%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .circle-div h3 {
+        font-weight: 700;
+        font-size: 54.2894px;
+        line-height: 75%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFEE2E;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 20px;
+    }
+    .circle-div-container {
+        background: url(./assets/images/circle.png) no-repeat;
+        background-position: left 0% top 5%;
+        padding-top: 48px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding-right: 11px;
+    }
+
+    .second {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 118px 20px 20px;
+        background: url(./assets/images/flower.png) no-repeat;
+        background-position: right -99px top 4%;
+        background-size: 210px 324px;
+    }
+
+   .show-tablet {
+    display: flex!important;
+   }
+
+    .backstage span {
+        letter-spacing: 0;
+    }
+
+    .animal-cards {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        justify-content: center;
+        background: url(./assets/images/palm.png) no-repeat, url(./assets//images/strelitzia\ .png) no-repeat;
+        background-position: left -231px bottom -64px, right -21px bottom -9px;
+        background-size: 385px 202px, 175px 131px;
+    }
+
+    .arrow-container {
+        display: flex;
+        gap: 5rem;
+        position: absolute;
+        top: 46%;
+    }
+
+    #back-h2 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #333B41;
+    }
+
+    .backstage h2 {
+        color: #333B41;
+        width: 100%;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 120%;
+        color: #333B41;
+    }
+
+    .card-container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 90px;
+    }
+
+    .pick-description h2 {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 120%;
+    }
+    
+    .feed-friend {
+        padding: 20px 0;
+    }
+
+    .pick-container {
+        padding: 20px 10px;
+    }
+
+    .pick-description span {
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: left;
+    }
+
+    .covid-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #333B41;
+    }
+
+    .reopened-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #333B41;
+    }
+
+    .how-it-works {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 130%;
+    }
+
+    .pick-card-container {
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 42px;
+        align-items: flex-start;
+    }
+
+    .pick-card {
+        position: unset;
+    }
+
+    .first-arrow {
+        position: absolute;
+        right: 67%;
+        top: -19%;
+        transform: rotateZ(-83deg);
+    }
+
+    .second-arrow {
+        position: absolute;
+        right: 31%;
+        top: -20%;
+        transform: rotateZ(-83deg);
+    }
 }
