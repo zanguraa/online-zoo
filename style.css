@@ -845,6 +845,10 @@ svg:hover {
         right: 0;
     }
 
+    .emergency-link {
+        text-decoration: none;
+    }
+
     .footer-wrapper-bottom {
         position: relative;
         display: flex;
@@ -934,4 +938,34 @@ svg:hover {
         background-position: left 0% top -70%;
     }
 
+    .second {
+        background: none;
+        flex-direction: row;
+        padding: 100px 20px;
+    }
+
+    #back-h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .backstage {
+        gap: 20px;
+    }
+
+    .card-container {
+        max-width: 100%;
+        row-gap: 90px;
+    }
+
+    .animal-cards {
+        margin-top: 60px;
+        padding-bottom: 90px;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        justify-content: center;
+        background: url(./assets/images/palm.png) no-repeat, url(./assets//images/strelitzia\ .png) no-repeat;
+        background-position: left -159px bottom -33px, right -21px bottom -9px;
+        background-size: 381px 202px, 273px 180px;
+    }
 }
