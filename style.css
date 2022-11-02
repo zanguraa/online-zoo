@@ -604,6 +604,18 @@ svg:hover {
     justify-content: center;
 }
 
+.footer-button:hover {
+    background: #E47209;
+}
+
+.footer-button:disabled {
+    background: #828282;
+}
+
+.footer-button:active {
+    background: #4B9200;
+}
+
 .footer-button a {
     font-size: 16px;
     line-height: 140%;
@@ -1089,6 +1101,8 @@ svg:hover {
     }
 
     form {
+        position: absolute;
+        right: 30px;
         display: flex;
         flex-direction: column;
     }
@@ -1098,6 +1112,7 @@ svg:hover {
         font-size: 24px;
         line-height: 120%;
         color: #FFFFFF;
+        margin-bottom: 14px;
     }
 
     label {
@@ -1134,5 +1149,17 @@ svg:hover {
     .submit-button:hover {
         border: 1px solid #4B9200;
         color: #4B9200;
+    }
+
+    .footer-wrapper-bottom {
+        margin-bottom: -20px;
+    }
+
+    .footer-reverse {
+        margin-top: -45px;
+    }
+
+    .footer-navigation ul {
+        gap: 48px;
     }
 }
