@@ -214,6 +214,12 @@ header {
     height: 54px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .orange-button:hover {
@@ -235,6 +241,11 @@ header {
     height: 54px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .universal-button:hover {
@@ -251,23 +262,8 @@ header {
     gap: 20px;
 }
 
-.universal-button a {
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-}
 
 
-.orange-button a {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-}
 
 .backstage {
     display: flex;
@@ -320,7 +316,7 @@ header {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all .3s ease-out;
     background-color: #bd9b9b;
 
@@ -517,6 +513,13 @@ header {
     width: 240px;
     height: 54px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .feedback-button:hover {
@@ -527,15 +530,6 @@ header {
     background: #4B9200;
 }
 
-.feedback-button a {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
-}
 
 .feedback-wrapper {
     display: flex;
@@ -611,6 +605,12 @@ svg:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer-button:hover {
@@ -623,15 +623,6 @@ svg:hover {
 
 .footer-button:active {
     background: #4B9200;
-}
-
-.footer-button a {
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
 }
 
 .designed-by {
@@ -803,12 +794,18 @@ svg:hover {
         position: absolute;
         top: 46%;
         left: 36%;
+        cursor: pointer;
     }
 
     .right-button {
         position: absolute;
         top: 46%;
         right: 38%;
+        cursor: pointer;
+    }
+
+    .right-button:active, .left-button:active {
+        background: #4B9200;
     }
 
     .pick-description h2 {
@@ -1340,5 +1337,42 @@ svg:hover {
         font-size: 24px;
         letter-spacing: 1px;
     }
+
+  .feedback-card {
+    width: 244px;
+    height: 391px;
+  }
+
+  .feedback-wrapper {
+    margin: auto;
+  }
+
+  .feedback-button {
+    margin-left: 219px;
+  }
+
+  .scroll-div {
+    width: 599px;
+  }
+
+  .footer-wrapper {
+    max-width: 1160px;
+  }
+
+  .form-wrapper {
+    right: 0;
+  }
+
+  .pick-description h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .pick-description span {
+    font-size: 24px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
 
 }
