@@ -1036,6 +1036,14 @@ svg:hover {
         line-height: 75%;
     }
 
+    .pick-container {
+        padding: 20px 49px;
+    }
+
+    .reopened-text {
+        letter-spacing: 0.7px;
+    }
+
     .circle-div h3 {
         font-weight: 700;
         font-size: 85px;
@@ -1243,6 +1251,14 @@ svg:hover {
         gap: 48px;
     }
 
+    .covid-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #333B41;
+        letter-spacing: 1px;
+    }
+
    .footer-reverse {
     z-index: 10;
     position: relative;
@@ -1406,11 +1422,13 @@ svg:hover {
 }
 
 .reopened-text {
-    letter-spacing: 0.7px;
+    width: 91%;
+    font-size: 16px;
 }
 
 .covid-text {
     font-size: 15px;
+    letter-spacing: 0;
 }
 
 .desktop-maximum {
