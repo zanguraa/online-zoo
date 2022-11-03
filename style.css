@@ -76,10 +76,17 @@ header {
     z-index: 0;
     background: #111115;
     padding: 10px;
+    
+}
+
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1160px;
+    margin: auto;
 }
+
 
 .logo-container {
     
@@ -239,7 +246,9 @@ header {
 }
 
 .card-container {
+    display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .universal-button a {
@@ -782,13 +791,24 @@ svg:hover {
 
     .card-container {
         position: relative;
-        display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 90px;
+        max-width: 640px;
+    }
+
+    .left-button {
+        position: absolute;
+        top: 46%;
+        left: 36%;
+    }
+
+    .right-button {
+        position: absolute;
+        top: 46%;
+        right: 38%;
     }
 
     .pick-description h2 {
@@ -895,6 +915,12 @@ svg:hover {
 
     .emergency-link {
         text-decoration: none;
+        border-bottom: 1px solid orange;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #333B41;
+        margin-left: 5px;
     }
 
     .footer-wrapper-bottom {
@@ -929,7 +955,17 @@ svg:hover {
         border: 1px solid #FFFFFF;
         border-radius: 2px;
         padding: 3px;
-        background-position: 13% 77%;
+        display: flex;
+        height: 52px;
+        width: 82px;
+        align-items: center;
+        background-position: 16px 29px;
+    }
+
+    .logo-container h1 {
+        font-weight: 400;
+        font-size: 19.0145px;
+        line-height: 120%;
     }
 
     .header-nav ul {
@@ -984,13 +1020,35 @@ svg:hover {
     }
 
     .circle-div-container {
-        background-position: left 0% top -70%;
+        padding-top: 53px;
+        background-size: 365px 365px;
+        width: 400px;
+        height: 320px;
+        background-position: left 88px top -11px;
+        padding-right: 81px;
+    }
+
+    .circle-div {
+        font-weight: 700;
+        font-size: 85px;
+        line-height: 75%;
+    }
+
+    .circle-div h3 {
+        font-weight: 700;
+        font-size: 85px;
+        line-height: 75%;
     }
 
     .second {
         background: none;
         flex-direction: row;
         padding: 100px 20px;
+    }
+
+    .second-wrapper {
+        display: flex;
+        gap: 31px;
     }
 
     #back-h2 {
@@ -1002,9 +1060,19 @@ svg:hover {
     }
 
     .card-container {
-        max-width: 100%;
+        max-width: 1000px;
         row-gap: 90px;
     }
+
+    .left-button {
+        position: absolute;
+        left: 36%;
+       }
+    
+       .right-button {
+        position: absolute;
+        right: 36%;
+       }
 
     .animal-cards {
         margin-top: 60px;
@@ -1100,7 +1168,7 @@ svg:hover {
         color: #FFFFFF;
     }
 
-    form {
+    .form-wrapper {
         position: absolute;
         right: 30px;
         display: flex;
@@ -1162,4 +1230,115 @@ svg:hover {
     .footer-navigation ul {
         gap: 48px;
     }
+}
+
+@media screen and (min-width: 1600px) {
+    header {
+        padding: 14px 0;
+    }
+
+    .circle-div {
+        width: 500px;
+        height: 400px;
+        font-weight: 700;
+        font-size: 106.496px;
+        line-height: 75%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .circle-div h3 {
+        font-weight: 700;
+        font-size: 106.496px;
+        line-height: 75%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .watch-container {
+        padding-right: 220px;
+    }
+
+    .circle-div-container {
+        background-size: 465px 465px;
+        background-position: left 5px top 16px;
+        padding-right: 81px;
+        padding-bottom: 37px;
+        padding-top: 86px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #watch-online {
+        height: 653px;
+        background-position: left 0 top -78px;
+    }
+
+    .button-container {
+        align-items: center;
+        margin-left: 56px;
+    }
+
+    .second {
+        background: url(./assets/images/flower.png) no-repeat;
+        background-position: right -89px top 10px;
+        background-size: 293px 605px;
+        flex-direction: row;
+        padding: 140px 20px;
+    }
+
+    .backstage span {
+        width: 89%;
+        letter-spacing: 1.5px;
+    }
+
+   .card-container {
+    max-width: 1158px;
+    gap: 20px;
+   }
+
+   .arrow-container {
+    position: unset;
+   }
+
+   .card {
+    width: 366px;
+   }
+
+   .left-button {
+    position: absolute;
+    left: -68px;
+    top: 46%;
+    margin: 0;
+    padding: 0;
+   }
+
+   .right-button {
+    position: absolute;
+    right: -68px;
+    top: 46%;
+    margin: 0;
+    padding: 0;
+    }
+
+    .animal-cards {
+        background-position: left -435px bottom -18px, right 0px bottom 0px;
+        background-size: 728px 441px, 368px 275px;
+    }
+
+    .feed-friend {
+        padding-top: 69px;
+        padding-bottom: 100px;
+    }
+
+    .pick-container {
+        padding: 20px 49px;
+    }
+
+    .pick-card-container span {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
 }
