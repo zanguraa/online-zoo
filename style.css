@@ -231,6 +231,7 @@ header {
 }
 
 .universal-button {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,11 +561,12 @@ footer {
     
 }
 
-.footer-logo h2 {
+.footer-logo a {
     font-weight: 400;
     font-size: 19.0145px;
     line-height: 120%;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer-logo img {
@@ -820,6 +822,7 @@ svg:hover {
 
     .pick-container {
         padding: 20px 10px;
+        gap: 30px;
     }
 
     .pick-description span {
@@ -828,6 +831,7 @@ svg:hover {
         font-size: 22px;
         line-height: 120%;
         text-align: left;
+        margin-bottom: 10px;
     }
 
     .covid-text {
@@ -838,6 +842,7 @@ svg:hover {
     }
 
     .reopened-text {
+        display: block!important;
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
@@ -1163,6 +1168,16 @@ svg:hover {
         font-size: 16px;
         line-height: 140%;
         color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .single-icon:hover p {
+        color: #4B9200;
+        fill: #4B9200;
+    }
+
+    .single-icon:hover svg {
+        fill: #4B9200;
     }
 
     .form-wrapper {
@@ -1227,6 +1242,11 @@ svg:hover {
     .footer-navigation ul {
         gap: 48px;
     }
+
+   .footer-reverse {
+    z-index: 10;
+    position: relative;
+   }
 }
 
 @media screen and (min-width: 1600px) {
@@ -1330,7 +1350,8 @@ svg:hover {
     }
 
     .pick-container {
-        padding: 20px 49px;
+        padding: 20px 96px;
+        max-width: 968px;
     }
 
     .pick-card-container span {
@@ -1345,10 +1366,17 @@ svg:hover {
 
   .feedback-wrapper {
     margin: auto;
+    gap: 30px;
+    width: 1160px;
+}
+
+  .feedback-button-container {
+    margin: auto;
+    width: 1160px;
   }
 
   .feedback-button {
-    margin-left: 219px;
+    margin: 0;
   }
 
   .scroll-div {
@@ -1371,8 +1399,23 @@ svg:hover {
   .pick-description span {
     font-size: 24px;
     margin-bottom: 40px;
-    letter-spacing: 1px;
   }
 
+.header-nav ul {
+    margin-left: -300px;
+}
+
+.reopened-text {
+    letter-spacing: 0.7px;
+}
+
+.covid-text {
+    font-size: 15px;
+}
+
+.desktop-maximum {
+    display: flex!important;
+
+}
 
 }
